@@ -1,0 +1,19 @@
+<nav class="uk-width-1-5">
+    <% if !current_page.data.hide_sidebar_nav %>
+            <% if current_page.parent %>
+                <div class="uk-width-1-1 uk-margin-small-bottom uk-margin-top">
+                    <a href="<%= current_page.parent.url %>" class="uk-link-heading">
+                        <span uk-icon="arrow-left"></span> <%= current_page.parent.data.title %>
+                    </a>
+                    <hr class="uk-width-2-3">
+                </div>
+                <ul class="uk-nav uk-nav-default">
+                    <% current_page.parent.children.sort_by!{ |x| x.data.order ? x.data.order : -1 }.each do |p| %>
+                        <li class="<%= p.url === current_page.url ? 'uk-active' : ''%>">
+                            <a href="<%= p.url %>"><%= p.data.title %></a>
+                        </li>
+                    <% end %>
+                </ul>
+            <% end %>
+    <% end %>
+</nav>

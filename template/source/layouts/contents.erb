@@ -1,0 +1,11 @@
+<% wrap_layout :core do %>
+  <main class="uk-padding-small uk-margin-bottom" role="main">
+    <div uk-grid class="uk-grid-small">
+        <div class="uk-width-expand" id="main">
+            <%= partial "partials/breadcrumbs" %>
+            <%= yield %>
+            <%= partial "partials/contents_list" %>
+        </div>
+    </div>
+  </main>
+<% end %>

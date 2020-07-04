@@ -1,0 +1,12 @@
+[
+    {
+        "url": "//github.com",
+        "label": "GitHub",
+        "icon": "github"
+    },
+    {
+        "url": "//twitter.com",
+        "label": "Twitter",
+        "icon": "twitter"
+    }
+]

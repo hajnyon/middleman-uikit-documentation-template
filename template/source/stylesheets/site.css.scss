@@ -1,0 +1,30 @@
+.bg-primary {
+    background: linear-gradient(to left, #28a5f5, #1e87f0);
+}
+
+.middleman-logo {
+    width: 50px;
+}
+
+.middleman-logo-hero {
+    width: 15rem;
+}
+
+pre {
+    background: inherit;
+}
+
+.edit-page {
+    position: fixed;
+    text-align: center;
+    padding: 20px;
+    margin-left: 20px;
+    bottom: 0px;
+    width: 150px;
+    border-radius: 25px 25px 0px 0px;
+    opacity: 0.7;
+    a#edit-page-link {
+        color: #fff;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="<%= I18n.locale %>">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge,chrome=1" http-equiv="x-ua-compatible">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title><%= current_page.data.title || "Middleman" %></title>
+    <!-- UIkit CSS -->
+    <%= stylesheet_link_tag "uikit/uikit.min" %>
+    <%= stylesheet_link_tag "highlighting" %>
+    <%= stylesheet_link_tag "site" %>
+  </head>
+  <body>
+    <div class="uk-container uk-container-expand uk-padding-remove-left uk-padding-remove-right">
+        <%= partial "partials/site_navigation" %>
+        <div class="uk-container uk-container-large">
+            <%= yield %>
+        </div>
+        <%= partial "partials/site_footer" %>
+        <div class="edit-page bg-primary">
+            <%= link_to('Edit this page', edit_page_url(data.config.repository, current_page.file_descriptor.relative_path), id: 'edit-page-link') %>
+        </div>
+    </div>
+
+    <!-- UIkit JS -->
+    <%= javascript_include_tag "uikit/uikit.min" %>
+    <%= javascript_include_tag "uikit/uikit-icons.min" %>
+    <%= javascript_include_tag "site" %>
+  </body>
+</html>

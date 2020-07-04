@@ -1,0 +1,9 @@
+<nav class="uk-width-1-1">
+    <ul class="uk-breadcrumb">
+        <% bc_pages = get_breadcrumbs(current_page) %>
+        <% bc_pages.reverse_each do |p| %>
+            <li><a href="<%= p.url %>"><%= p.data.title %></a></li>
+        <% end %>
+        <li><span><%= current_page.data.title %></span></li>
+    </ul>
+</nav>

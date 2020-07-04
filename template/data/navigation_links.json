@@ -1,0 +1,15 @@
+[
+    {
+        "url": "docs",
+        "label": "Docs",
+        "sub": [
+            { "url": "docs/install", "label": "Installation" },
+            { "url": "docs/usage", "label": "Usage" },
+            { "url": "docs/showcase", "label": "Showcase" }
+        ]
+    },
+    {
+        "url": "about",
+        "label": "About"
+    }
+]

@@ -1,0 +1,13 @@
+<footer class="uk-flex uk-flex-between uk-padding-small uk-background-muted">
+    <p class="uk-margin-remove">
+        &copy; <%= Date.today.year %>
+        <%= link_to data.config.site_name, data.config.base_url %>
+    </p>
+
+    <div class="uk-flex">
+        <% data.footer_links.each do |link| %>
+            <% icon_label = "<span uk-icon='#{link.icon}'></span> #{link.label}" %>
+            <%= link_to icon_label, link.url, class: "uk-link-heading uk-text-small uk-text-middle uk-margin-right" %>
+        <% end %>
+    </div>
+</footer>
