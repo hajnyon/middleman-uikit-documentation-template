@@ -11,7 +11,7 @@ Check [demo](https://hajnyon.gitlab.io/middleman-uikit-documentation-demo/) or l
 ## Instalation
 
 ```bash
-middleman init MY_PROJECT_FOLDER -T hajnyon/middleman-uikit-documentation
+middleman init MY_PROJECT_FOLDER -T hajnyon/middleman-uikit-documentation-template
 ```
 
 ## Configuration
