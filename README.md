@@ -19,7 +19,6 @@ middleman init MY_PROJECT_FOLDER -T hajnyon/middleman-uikit-documentation-templa
 ```yml
 repository: https://git.fiedler.corp/software/documentation/cloud # repository for gitlab static site editor
 site_name: 'Documentation Template' # site name displayed in logo, titles and links
-base_url: '/' # base url that all links uses (must lead and end with slash)
 ```
 
 **data/footer_links.json** - social links in footer
@@ -44,7 +43,7 @@ base_url: '/' # base url that all links uses (must lead and end with slash)
 ```json
 [
     {
-        "url": "docs",
+        "url": "/docs/index.html",
         "label": "Docs",
         "sub": [
             { "url": "docs/install", "label": "Installation" },
