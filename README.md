@@ -19,9 +19,10 @@ Check [demo](https://hajnyon.gitlab.io/middleman-uikit-documentation-demo/) or l
 
 ### Planned
 
--   back and forward links
--   optional right sidebar with links to second level heading
--   heading anchors
+-   next and previous links #1
+-   optional right sidebar with links to second level heading #2
+-   heading anchors #3
+-   search #4
 
 ## Instalation
 
