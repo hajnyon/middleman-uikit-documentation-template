@@ -1,6 +1,6 @@
 <% if current_page.children %>
     <ul class="uk-nav-primary uk-nav-parent-icon uk-padding-small" uk-nav>
-        <% current_page.children.each_with_index do |p, index| %>
+        <% current_page.children.sort_by!{ |x| x.data.order ? x.data.order : -1 }.each_with_index do |p, index| %>
             <li>
                 <%= link_to "#{index + 1}. #{p.data.title}", p %>
             </li>
