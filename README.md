@@ -72,3 +72,10 @@ site_name: 'Documentation Template' # site name displayed in logo, titles and li
 -   **documentation** - default documentation layout (sidebar and breadcrumbs, default for `docs/*`)
 
 For more visit [documentation](https://hajnyon.gitlab.io/middleman-uikit-documentation-demo/docs/usage/).
+
+## Credits
+
+-   [middleman](//middlemanapp.com)
+-   [middleman.com](https://github.com/middleman/middlemanapp.com)
+-   [middleman-templates-blog](https://github.com/middleman/middleman-templates-blog)
+-   [middleman-syntax](https://github.com/middleman/middleman-syntax)
