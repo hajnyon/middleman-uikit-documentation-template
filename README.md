@@ -4,7 +4,9 @@ Template for documentation pages styled with UIkit for Middleman.
 
 Check [demo](https://hajnyon.gitlab.io/middleman-uikit-documentation-demo/) or learn about customization and usage in [documentation](https://hajnyon.gitlab.io/middleman-uikit-documentation-demo/docs/usage/).
 
-![Screenshot](./screenshot.png)
+![Screenshot of landing](./screenshot_landing.png)
+
+![Screenshot of docs](./screenshot_doc.png)
 
 ## Instalation
 
