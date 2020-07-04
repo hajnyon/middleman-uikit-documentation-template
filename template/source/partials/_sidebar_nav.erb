@@ -2,15 +2,14 @@
     <% if !current_page.data.hide_sidebar_nav %>
             <% if current_page.parent %>
                 <div class="uk-width-1-1 uk-margin-small-bottom uk-margin-top">
-                    <a href="<%= current_page.parent.url %>" class="uk-link-heading">
-                        <span uk-icon="arrow-left"></span> <%= current_page.parent.data.title %>
-                    </a>
+                    <% icon_label = "<span uk-icon='arrow-left'></span> #{current_page.parent.data.title}" %>
+                    <%= link_to icon_label, current_page.parent, class: "uk-link-heading" %>
                     <hr class="uk-width-2-3">
                 </div>
                 <ul class="uk-nav uk-nav-default">
                     <% current_page.parent.children.sort_by!{ |x| x.data.order ? x.data.order : -1 }.each do |p| %>
                         <li class="<%= p.url === current_page.url ? 'uk-active' : ''%>">
-                            <a href="<%= p.url %>"><%= p.data.title %></a>
+                            <%= link_to p.data.title, p %>
                         </li>
                     <% end %>
                 </ul>

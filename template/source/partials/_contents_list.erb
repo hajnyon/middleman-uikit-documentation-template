@@ -2,7 +2,7 @@
     <ul class="uk-nav-primary uk-nav-parent-icon uk-padding-small" uk-nav>
         <% current_page.children.each_with_index do |p, index| %>
             <li>
-                <a href="<%= p.url %>"><%= index + 1 %>. <%= p.data.title %></a>
+                <%= link_to "#{index + 1}. #{p.data.title}", p %>
             </li>
         <% end %>
     </ul>

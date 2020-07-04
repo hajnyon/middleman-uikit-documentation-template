@@ -19,6 +19,8 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+set :relative_links, true
+
 configure :build do
   set :build_dir, 'public'
 

@@ -1,6 +1,6 @@
 [
     {
-        "url": "docs",
+        "url": "/docs/index.html",
         "label": "Docs",
         "sub": [
             { "url": "docs/install", "label": "Installation" },
