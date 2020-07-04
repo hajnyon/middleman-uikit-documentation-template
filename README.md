@@ -34,7 +34,7 @@ middleman init MY_PROJECT_FOLDER -T hajnyon/middleman-uikit-documentation-templa
 **data/config.yml** - basic site configuration
 
 ```yml
-repository: https://git.fiedler.corp/software/documentation/cloud # repository for gitlab static site editor
+repository: https://gitlab.com/hajnyon/middleman-uikit-documentation-demo # repository for gitlab static site editor
 site_name: 'Documentation Template' # site name displayed in logo, titles and links
 ```
 
