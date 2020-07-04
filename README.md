@@ -6,6 +6,23 @@ Check [demo](https://hajnyon.gitlab.io/middleman-uikit-documentation-demo/) or l
 
 ![Screenshot of docs](./screenshot.png)
 
+## Features
+
+### Implemented
+
+-   layouts - landing, contents list and documentation
+-   breadcrumbs
+-   sidebar nav
+-   code snippets highlights
+-   two level navbar
+-   [GitLab SSE](https://docs.gitlab.com/ee/user/project/static_site_editor/) ready
+
+### Planned
+
+-   back and forward links
+-   optional right sidebar with links to second level heading
+-   heading anchors
+
 ## Instalation
 
 ```bash
@@ -70,6 +87,17 @@ site_name: 'Documentation Template' # site name displayed in logo, titles and li
 -   **home** - landing page
 -   **contents** - documentation contents list
 -   **documentation** - default documentation layout (sidebar and breadcrumbs, default for `docs/*`)
+
+## Frontmatter
+
+You can specify order attribute to sort links in sidebar navigation.
+
+```md
+---
+title: Showcase
+order: 3
+---
+```
 
 For more visit [documentation](https://hajnyon.gitlab.io/middleman-uikit-documentation-demo/docs/usage/).
 
