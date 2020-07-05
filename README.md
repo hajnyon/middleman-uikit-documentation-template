@@ -16,11 +16,11 @@ Check [demo](https://hajnyon.gitlab.io/middleman-uikit-documentation-demo/) or l
 -   code snippets highlights
 -   two level navbar
 -   [GitLab SSE](https://docs.gitlab.com/ee/user/project/static_site_editor/) ready
+-   optional right sidebar with links to second level heading
 
 ### [Planned](https://github.com/hajnyon/middleman-uikit-documentation-template/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
 
 -   next and previous links
--   optional right sidebar with links to second level heading
 -   heading anchors
 -   search
 
