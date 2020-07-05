@@ -18,4 +18,21 @@ module CustomHelpers
         return bc_pages
     end
 
+    # get last updated time of file from git
+    def last_update_time(file)
+        return Time.parse `git log -1 --format=%cd #{file} 2>/dev/null`
+    end
+
+    # get second level headings from markdown
+    def chapters( post )
+        File.readlines( post.source_file ).collect do |x|
+          if x =~ /^##\s(.*)/
+            $1
+          else
+            nil
+          end
+        end.select { |x| x }
+    end
+
+
 end

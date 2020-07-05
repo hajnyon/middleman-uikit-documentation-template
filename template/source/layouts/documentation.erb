@@ -5,7 +5,14 @@
         <div class="uk-width-expand" id="main">
             <%= partial "partials/breadcrumbs" %>
             <%= yield %>
+            <% if data.config.last_updated %>
+                <span class="uk-text-small uk-align-right">
+                    Last updated: <i><%= last_update_time(current_page.source_file).strftime('%c') %></i>
+                </span>
+            <% end %>
+
         </div>
+        <%= partial "partials/sidebar_right_nav" %>
     </div>
   </main>
 <% end %>

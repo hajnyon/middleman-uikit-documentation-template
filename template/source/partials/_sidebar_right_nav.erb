@@ -1,0 +1,13 @@
+<% if data.config.sidebar_right && !current_page.data.hide_sidebar_right_nav %>
+<div class="uk-width-1-5@m uk-visible@m">
+    <nav uk-sticky="offset: 160">
+        <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
+            <% chapters(current_page).each do |chapter| %>
+                <li>
+                    <%= link_to chapter, "##{chapter.downcase.gsub( /\s/, "-" )}" %>
+                </li>
+            <% end %>
+        </ul>
+    </nav>
+</div>
+<% end %>

@@ -39,6 +39,7 @@
         <%= link_to data.config.site_name, '/index.html', class: 'uk-navbar-item uk-logo' %>
 
         <ul class="uk-nav">
+            <li class="uk-nav-header">Menu</li>
             <% data.navigation_links.each do |link| %>
                 <li class="uk-parent">
                     <%= link_to link.label, link.url %>
