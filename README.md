@@ -17,12 +17,12 @@ Check [demo](https://hajnyon.gitlab.io/middleman-uikit-documentation-demo/) or l
 -   two level navbar
 -   [GitLab SSE](https://docs.gitlab.com/ee/user/project/static_site_editor/) ready
 
-### Planned
+### [Planned](https://github.com/hajnyon/middleman-uikit-documentation-template/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
 
--   next and previous links #1
--   optional right sidebar with links to second level heading #2
--   heading anchors #3
--   search #4
+-   next and previous links
+-   optional right sidebar with links to second level heading
+-   heading anchors
+-   search
 
 ## Instalation
 
