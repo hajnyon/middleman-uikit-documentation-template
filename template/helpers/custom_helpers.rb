@@ -20,7 +20,11 @@ module CustomHelpers
 
     # get last updated time of file from git
     def last_update_time(file)
-        return Time.parse `git log -1 --format=%cd #{file} 2>/dev/null`
+        time = `git log -1 --format=%cd #{file} 2>/dev/null`
+        if time == ''
+            return ''
+        end
+        return Time.parse time
     end
 
     # get second level headings from markdown

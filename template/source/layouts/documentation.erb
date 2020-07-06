@@ -7,7 +7,14 @@
             <%= yield %>
             <% if data.config.last_updated %>
                 <span class="uk-text-small uk-align-right">
-                    Last updated: <i><%= last_update_time(current_page.source_file).strftime('%c') %></i>
+                    Last updated: <i>
+                    <% last_update = last_update_time(current_page.source_file) %>
+                    <% if last_update == '' %>
+                        N/A
+                    <% else %>
+                        <%= last_update.strftime('%c') %>
+                    </i>
+                    <% end %>
                 </span>
             <% end %>
 
