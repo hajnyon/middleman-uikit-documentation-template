@@ -28,3 +28,30 @@ pre {
         text-decoration: none;
     }
 }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    th {
+        padding: 10px 12px;
+        text-align: left;
+        vertical-align: bottom;
+        font-size: 12px;
+        font-weight: normal;
+        color: #999;
+        text-transform: uppercase;
+    }
+    tbody > tr {
+        transition: background-color 0.1s linear;
+        &:nth-of-type(odd) {
+            background: #f8f8f8;
+            border-top: 1px solid #e5e5e5;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        td {
+            padding: 10px 12px;
+            vertical-align: top;
+        }
+    }
+}
