@@ -18,7 +18,7 @@
                         <% if next_link %>
                             <li class="uk-margin-auto-left">
                                 <% link_label = "#{p.data.title} <span class='uk-margin-small-left' uk-pagination-next></span>" %>
-                                <%= link_to link_label, p.url %>
+                                <%= link_to link_label, p %>
                             </li>
                             <% next_link = false %>
                         <% end %>
