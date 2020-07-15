@@ -1,9 +1,9 @@
 <% wrap_layout :core do %>
   <main class="uk-padding-small uk-margin-bottom" role="main">
     <div uk-grid class="uk-grid-small">
+        <%= partial "partials/breadcrumbs" %>
         <%= partial "partials/sidebar_nav" %>
         <div class="uk-width-expand" id="main">
-            <%= partial "partials/breadcrumbs" %>
             <%= yield %>
             <% if data.config.last_updated %>
                 <span class="uk-text-small uk-align-right">
@@ -17,7 +17,6 @@
                     <% end %>
                 </span>
             <% end %>
-
         </div>
         <%= partial "partials/sidebar_right_nav" %>
     </div>

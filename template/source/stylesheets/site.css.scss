@@ -27,6 +27,12 @@ pre {
         color: #fff;
         text-decoration: none;
     }
+    @media only screen and (max-width: 768px) {
+        padding: 6px;
+        margin-left: 4px;
+        width: 105px;
+        border-radius: 15px 15px 0px 0px;
+    }
 }
 
 table {
