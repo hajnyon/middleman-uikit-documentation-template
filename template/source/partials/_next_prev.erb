@@ -1,0 +1,34 @@
+<% if data.config.next_prev && !current_page.data.hide_next_prev && current_page.parent %>
+    <div class="uk-width-1-1">
+        <div uk-grid class="uk-grid-small">
+            <div class="uk-width-1-5 uk-visible@s"></div>
+            <div class="uk-width-1-1 uk-width-3-5@s">
+                <ul class="uk-pagination">
+                    <% previous_link = false %>
+                    <% next_link = false %>
+                    <% current_page.parent.children.sort_by!{ |x| x.data.order ? x.data.order : -1 }.each do |p| %>
+                        <% if p.url === current_page.url %>
+                            <% if previous_link %>
+                                <li>
+                                    <% link_label = "<span class='uk-margin-small-right' uk-pagination-previous></span> #{previous_link.data.title}" %>
+                                    <%= link_to link_label, previous_link %>
+                                </li>
+                            <% end %>
+                        <% end %>
+                        <% if next_link %>
+                            <li class="uk-margin-auto-left">
+                                <% link_label = "#{p.data.title} <span class='uk-margin-small-left' uk-pagination-next></span>" %>
+                                <%= link_to link_label, p.url %>
+                            </li>
+                            <% next_link = false %>
+                        <% end %>
+                        <% if p.url === current_page.url%>
+                            <% next_link = true %>
+                        <% end %>
+                        <% previous_link = p %>
+                    <% end %>
+                </ul>
+            </div>
+        </div>
+    </div>
+<% end %>

@@ -2,3 +2,4 @@ repository: https://git.fiedler.corp/software/documentation/cloud
 site_name: 'Documentation Template'
 last_updated: true
 sidebar_right: true
+next_prev: true
