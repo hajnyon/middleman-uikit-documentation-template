@@ -65,13 +65,13 @@ site_name: 'Documentation Template' # site name displayed in logo, titles and li
         "url": "/docs/index.html",
         "label": "Docs",
         "sub": [
-            { "url": "docs/install", "label": "Installation" },
-            { "url": "docs/usage", "label": "Usage" },
-            { "url": "docs/showcase", "label": "Showcase" }
+            { "url": "/docs/install.html", "label": "Installation" },
+            { "url": "/docs/usage.html", "label": "Usage" },
+            { "url": "/docs/showcase.html", "label": "Showcase" }
         ]
     },
     {
-        "url": "about",
+        "url": "/about.html",
         "label": "About"
     }
 ]
