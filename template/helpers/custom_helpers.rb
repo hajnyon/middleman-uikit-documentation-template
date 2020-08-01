@@ -38,5 +38,16 @@ module CustomHelpers
         end.select { |x| x }
     end
 
+    # order array of pages either by order or alphabetically
+    def order_pages(pages, order_type = '')
+        case order_type
+        when 'alphabetical'
+            return pages.sort_by!{ |x| x.data.title.downcase }
+        when 'numeric'
+            return pages.sort_by!{ |x| x.data.order ? x.data.order : -1 }
+        else
+            return pages
+        end
+    end
 
 end

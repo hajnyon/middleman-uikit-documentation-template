@@ -7,7 +7,7 @@
                     <hr class="uk-width-2-3">
                 </div>
                 <ul class="uk-nav uk-nav-default">
-                    <% current_page.parent.children.sort_by!{ |x| x.data.order ? x.data.order : -1 }.each do |p| %>
+                    <% order_pages(current_page.parent.children, current_page.parent.data.order_type ? current_page.parent.data.order_type : '').each do |p| %>
                         <li class="<%= p.url === current_page.url ? 'uk-active' : ''%>">
                             <%= link_to p.data.title, p %>
                         </li>
