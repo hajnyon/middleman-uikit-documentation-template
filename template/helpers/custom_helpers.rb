@@ -27,9 +27,9 @@ module CustomHelpers
         return Time.parse time
     end
 
-    # get second level headings from markdown
-    def chapters( post )
-        File.readlines( post.source_file ).collect do |x|
+    # get second level headings from md file
+    def chapters(post)
+        File.readlines(post.source_file).collect do |x|
           if x =~ /^##\s(.*)/
             $1
           else
@@ -38,5 +38,16 @@ module CustomHelpers
         end.select { |x| x }
     end
 
+    # order array of pages either by order or alphabetically
+    def order_pages(pages, order_type = '')
+        case order_type
+        when 'alphabetical'
+            return pages.sort_by!{ |x| x.data.title.downcase }
+        when 'numeric'
+            return pages.sort_by!{ |x| x.data.order ? x.data.order : -1 }
+        else
+            return pages
+        end
+    end
 
 end
