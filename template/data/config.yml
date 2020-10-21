@@ -1,4 +1,4 @@
-repository: https://git.fiedler.corp/software/documentation/cloud
+repository: <GITLAB_SSG_URL>
 site_name: 'Documentation Template'
 last_updated: true
 sidebar_right: true
