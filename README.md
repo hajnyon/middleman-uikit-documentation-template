@@ -41,7 +41,7 @@ For configuration details visit [documentation](https://hajnyon.gitlab.io/middle
 
 ### Got question?
 
-Try [FAQ](https://hajnyon.gitlab.io/middleman-uikit-documentation-demo/docs/faq/) first and issues second. You didn't find an answer? Reach the [author](https://hajnyon.cz/) or created [issue](https://github.com/hajnyon/middleman-uikit-documentation-template/issues/new).
+Try [FAQ](https://hajnyon.gitlab.io/middleman-uikit-documentation-demo/docs/faq/) first and issues second. You didn't find an answer? Reach the [author](https://hajnyon.cz/) or create an [issue](https://github.com/hajnyon/middleman-uikit-documentation-template/issues/new).
 
 ## Credits
 
