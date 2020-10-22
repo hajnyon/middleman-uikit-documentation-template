@@ -25,83 +25,23 @@ Check [demo](https://hajnyon.gitlab.io/middleman-uikit-documentation-demo/) or l
 -   search
 -   localization support
 
-## Instalation
+## Usage
+
+### Installation
 
 ```bash
 middleman init MY_PROJECT_FOLDER -T hajnyon/middleman-uikit-documentation-template
 ```
 
-## Configuration
+For installation details visit [documentation](https://hajnyon.gitlab.io/middleman-uikit-documentation-demo/docs/install/).
 
-**data/config.yml** - basic site configuration
+### Configuration
 
-```yml
-repository: https://gitlab.com/hajnyon/middleman-uikit-documentation-demo # repository for gitlab static site editor
-site_name: 'Documentation Template' # site name displayed in logo, titles and links
-```
+For configuration details visit [documentation](https://hajnyon.gitlab.io/middleman-uikit-documentation-demo/docs/usage/).
 
-**data/footer_links.json** - social links in footer
+### Got question?
 
-```json
-[
-    {
-        "url": "//github.com",
-        "label": "GitHub",
-        "icon": "github"
-    },
-    {
-        "url": "//twitter.com",
-        "label": "Twitter",
-        "icon": "twitter"
-    }
-]
-```
-
-**data/navigation_links.json** - links displayed in top navigation (2 levels supported)
-
-```json
-[
-    {
-        "url": "/docs/index.html",
-        "label": "Docs",
-        "sub": [
-            { "url": "/docs/install.html", "label": "Installation" },
-            { "url": "/docs/usage.html", "label": "Usage" },
-            { "url": "/docs/showcase.html", "label": "Showcase" }
-        ]
-    },
-    {
-        "url": "/about.html",
-        "label": "About"
-    }
-]
-```
-
-## Content
-
--   **source/index.html.md** - landing page content
--   **source/about.html.md** - about page content
--   **source/docs** - content of documentation itself
--   **source/partials/\_hero.erb** - edit to customize landing page hero
-
-## Layouts
-
--   **home** - landing page
--   **contents** - documentation contents list
--   **documentation** - default documentation layout (sidebar and breadcrumbs, default for `docs/*`)
-
-## Frontmatter
-
-You can specify order attribute to sort links in sidebar navigation.
-
-```md
----
-title: Showcase
-order: 3
----
-```
-
-For more visit [documentation](https://hajnyon.gitlab.io/middleman-uikit-documentation-demo/docs/usage/).
+Try [FAQ](https://hajnyon.gitlab.io/middleman-uikit-documentation-demo/docs/faq/) first and issues second. You didn't find an answer? Reach the [author](https://hajnyon.cz/) or created [issue](https://github.com/hajnyon/middleman-uikit-documentation-template/issues/new).
 
 ## Credits
 
