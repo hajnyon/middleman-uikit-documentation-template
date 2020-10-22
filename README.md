@@ -43,9 +43,15 @@ For configuration details visit [documentation](https://hajnyon.gitlab.io/middle
 
 Try [FAQ](https://hajnyon.gitlab.io/middleman-uikit-documentation-demo/docs/faq/) first and issues second. You didn't find an answer? Reach the [author](https://hajnyon.cz/) or create an [issue](https://github.com/hajnyon/middleman-uikit-documentation-template/issues/new).
 
+## License
+
+All parts of this project (see Credits section) as well as template itself are licensed under [MIT](./LICENSE.md).
+
 ## Credits
 
 -   [middleman](//middlemanapp.com)
 -   [middleman.com](https://github.com/middleman/middlemanapp.com)
 -   [middleman-templates-blog](https://github.com/middleman/middleman-templates-blog)
 -   [middleman-syntax](https://github.com/middleman/middleman-syntax)
+-   [UIkit](https://getuikit.com/)
+-   [AnchorJS](https://github.com/bryanbraun/anchorjs)
