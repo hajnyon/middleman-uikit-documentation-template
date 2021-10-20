@@ -4,7 +4,7 @@
         <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
             <% chapters(current_page).each do |chapter| %>
                 <li>
-                    <%= link_to chapter, "##{chapter.downcase.gsub( /\s/, "-" )}" %>
+                    <%= link_to chapter, "##{chapter.downcase.gsub( /\s*\W+\s*/, "-" )}" %>
                 </li>
             <% end %>
         </ul>
